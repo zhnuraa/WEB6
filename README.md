@@ -1,4 +1,4 @@
-<img width="761" height="680" alt="{9288C48E-08E5-4FA4-B90A-39FA71E70695}" src="https://github.com/user-attachments/assets/330c6118-00a1-4536-aeb2-45f83266b3a2" /># WEB Technologies 1 - Assignment 6
+# WEB Technologies 1 - Assignment 6
 
 Name: Nurassyl Zhumagul
 
