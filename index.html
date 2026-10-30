@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6 - jQuery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Assignment 6 — jQuery</h1>
+
+    <!-- Task 1 -->
+    <section>
+        <h2>Task 1 — Profile</h2>
+        <h3>Welcome to My Portfolio</h3>
+        <p>Name: Nurassyl</p>
+        <h3 id="headline">Front-End Student</h3>
+        <p class="intro">I am learning JavaScript and jQuery.</p>
+        <button id="lightButton" type="button">Light Theme</button>
+        <button id="darkButton" type="button">Dark Theme</button>
+    </section>
+
+    <!-- Task 2 -->
+    <section>
+        <h2>Task 2 — About Me / Visibility</h2>
+        <p>I am Nurassyl. I study IT and enjoy building simple webpages.</p>
+        <div id="aboutContent">
+            <p>Currently learning jQuery!</p>
+            <ul>
+                <li>I like football.</li>
+                <li>I study IT.</li>
+                <li>I like programming.</li>
+            </ul>
+        </div>
+        <button id="hideButton" type="button">Hide</button>
+        <button id="showButton" type="button">Show</button>
+        <button id="toggleButton" type="button">Toggle</button>
+    </section>
+
+    <!-- Task 3 -->
+    <section>
+        <h2>Task 3 — Fade Gallery</h2>
+        <div id="gallery">
+            <img src="https://picsum.photos/id/10/200/150" alt="A forest beside a lake">
+            <img src="https://picsum.photos/id/29/200/150" alt="A mountain landscape">
+        </div>
+        <button id="fadeInButton" type="button">Fade In</button>
+        <button id="fadeOutButton" type="button">Fade Out</button>
+        <button id="fadeToggleButton" type="button">Fade Toggle</button>
+    </section>
+
+    <!-- Task 4 -->
+    <section>
+        <h2>Task 4 — Slide Panels</h2>
+        <p>Click a heading to open or close its panel.</p>
+        <h3 id="musicHeading" class="panel-heading">My Favorite Music</h3>
+        <div id="musicPanel" class="slide-panel">
+            <p>I like pop music.</p>
+        </div>
+        <h3 id="movieHeading" class="panel-heading">My Favorite Movie</h3>
+        <div id="moviePanel" class="slide-panel">
+            <p>My favorite movie is Interstellar.</p>
+        </div>
+        <h3 id="subjectHeading" class="panel-heading">My Favorite Subject</h3>
+        <div id="subjectPanel" class="slide-panel">
+            <p>My favorite subject is Web Technologies.</p>
+        </div>
+        <button id="openPanels" type="button">Open All</button>
+        <button id="closePanels" type="button">Close All</button>
+    </section>
+
+    <!-- Task 5 -->
+    <section>
+        <h2>Task 5 — Skills List</h2>
+        <ul id="skillList">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+        </ul>
+        <label for="skillInput">New skill:</label>
+        <input id="skillInput" type="text">
+        <button id="addSkillButton" type="button">Add Skill</button>
+        <button id="prependSkillButton" type="button">Prepend Skill</button>
+        <button id="removeSkillButton" type="button">Remove Skill</button>
+    </section>
+
+    <!-- Task 6 -->
+    <section>
+        <h2>Task 6 — Social Link</h2>
+        <a id="socialLink" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <button id="changeLinkButton" type="button">Change Link</button>
+    </section>
+
+    <!-- Task 7 -->
+    <section>
+        <h2>Task 7 — Live Form</h2>
+        <form id="liveForm">
+            <p>
+                <label for="liveName">Name:</label>
+                <input id="liveName" type="text">
+            </p>
+            <p>
+                <label for="liveEmail">Email:</label>
+                <input id="liveEmail" type="email">
+            </p>
+        </form>
+        <p>Name: <span id="nameOutput"></span></p>
+        <p>Email: <span id="emailOutput"></span></p>
+    </section>
+
+    <!-- Task 8 -->
+    <section>
+        <h2>Task 8 — Skill Animation</h2>
+        <p>HTML — 80%</p>
+        <div class="skill-bar">
+            <div id="htmlBar" class="skill-level"></div>
+        </div>
+        <p>CSS — 70%</p>
+        <div class="skill-bar">
+            <div id="cssBar" class="skill-level"></div>
+        </div>
+        <p>JavaScript — 50%</p>
+        <div class="skill-bar">
+            <div id="jsBar" class="skill-level"></div>
+        </div>
+        <button id="animateSkillsButton" type="button">Animate My Skills</button>
+    </section>
+
+    <!-- Task 0: Load jQuery before our script. -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
