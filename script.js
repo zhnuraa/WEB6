@@ -1,17 +1,12 @@
 // Task 0
-// $ means jQuery. ready() waits until the HTML is ready to use.
 $(document).ready(function() {
     console.log("jQuery is ready!");
 
     // Task 1
-    // Tag selector: select h1 elements and change a style.
     $("h1").css("font-size", "28px");
-    // ID selector: select one element and replace its text.
     $("#headline").text("Front-End Student — Learning jQuery");
-    // Class selector: select elements with class="intro".
     $(".intro").css("font-size", "18px");
 
-    // The function inside click() runs when the button is clicked.
     $("#lightButton").click(function() {
         $("body").css("background-color", "white");
         $("body").css("color", "black");
@@ -32,12 +27,10 @@ $(document).ready(function() {
     });
 
     $("#toggleButton").click(function() {
-        // toggle() switches between hidden and visible.
         $("#aboutContent").toggle();
     });
 
     // Task 3
-    // Fade methods gradually change opacity (how visible something is).
     $("#fadeInButton").click(function() {
         $("#gallery").fadeIn();
     });
@@ -51,7 +44,6 @@ $(document).ready(function() {
     });
 
     // Task 4
-    // Slide methods open or close a panel by changing its height.
     $("#musicHeading").click(function() {
         $("#musicPanel").slideToggle();
     });
@@ -74,10 +66,8 @@ $(document).ready(function() {
 
     // Task 5
     $("#addSkillButton").click(function() {
-        // val() reads the input. trim() removes spaces at both ends.
         const skill = $("#skillInput").val().trim();
 
-        // Only add a skill if the trimmed text is not empty.
         if (skill !== "") {
             const newSkill = $("<li>"); // Create a new list item.
             newSkill.text(skill); // Treat what was typed as plain text.
@@ -109,7 +99,6 @@ $(document).ready(function() {
     });
 
     // Task 7
-    // The input event runs whenever the user changes an input value.
     $("#liveName").on("input", function() {
         $("#nameOutput").text($("#liveName").val());
     });
@@ -123,12 +112,11 @@ $(document).ready(function() {
     });
 
     // Task 8
-    // A boolean stores true or false and remembers the bar state.
     let skillsAnimated = false;
 
     $("#animateSkillsButton").click(function() {
         if (skillsAnimated === false) {
-            // Animate each width over 500 milliseconds (half a second).
+            // Animate each width over 500 milliseconds.
             $("#htmlBar").animate({ width: "80%" }, 500);
             $("#cssBar").animate({ width: "70%" }, 500);
             $("#jsBar").animate({ width: "50%" }, 500);
